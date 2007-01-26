@@ -1,0 +1,12 @@
+Changes
+dic/lou-en2kana.csv
+dic/lou-ja2kana.csv
+dic/mk_ja2kana.pl
+lib/Acme/Lou.pm
+lib/Acme/Lou/Effect.pm
+Makefile.PL
+MANIFEST			This list of files
+README
+t/00-load.t
+t/01-translate.t
+META.yml                                 Module meta-data (added by MakeMaker)
