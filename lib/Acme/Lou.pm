@@ -1,6 +1,6 @@
 package Acme::Lou;
 use strict;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use utf8;
 use Carp;
@@ -327,7 +327,6 @@ This program is released under the following license: GPL
 
 =head1 SEE ALSO
 
-L<http://e8y.net/blog/2006/12/31/p139.html>, 
-L<http://mecab.sourceforge.jp/>
+L<http://e8y.net/labs/lou_trans/>, L<http://mecab.sourceforge.jp/>
 
 =cut

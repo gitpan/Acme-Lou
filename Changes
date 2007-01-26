@@ -1,5 +1,8 @@
 Revision history for Acme-Lou
 
-0.01  2007-01-27
+0.01  2007-01-23
       - Initial release.
+
+0.02  2007-01-27
+      - Add HTML effect option. Upload to CPAN.
 
