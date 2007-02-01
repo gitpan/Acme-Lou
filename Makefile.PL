@@ -31,7 +31,7 @@ WriteMakefile(
         'Test::More' => 0,
         'Encode' => 0,
         'HTML::Parser' => 0,
-        'MeCab' => 0,
+        'Text::MeCab' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Acme-Lou-*' },

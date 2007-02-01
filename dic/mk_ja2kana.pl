@@ -69,14 +69,16 @@ LINE: while (<$edict>) {
     my @en = split '/';
     my $ja = shift @en;
 
-    next if length $ja <= 1;
+#     next if length $ja <= 1;
     next if $ja =~ /^\p{InKatakana}+$/;
     next if $ja !~ /\p{InHiragana}|\p{InCJKUnifiedIdeographs}/;
     
     next if $ja eq 'いく';
     next if $ja eq 'そう';
     next if $ja eq 'くる';
+    next if $ja eq '来る';
     next if $ja eq 'みる';
+    next if $ja eq 'いる';
      
     PHRASE: for my $en (@en) {
         next if $skip_word{$en};
@@ -95,11 +97,8 @@ LINE: while (<$edict>) {
             next PHRASE unless exists $en2kana{$_};
             $_ = $en2kana{$_};
         }
-        if (@words > 2) {
-            printf {$ja2kana} "%s,%s\n", $ja, join("・", @words);
-        } else {
-            printf {$ja2kana} "%s,%s\n", $ja, join("", @words);
-        }
+        
+        printf {$ja2kana} "%s,%s\n", $ja, join(" ", @words);
         next LINE; 
     }
 }

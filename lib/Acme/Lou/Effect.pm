@@ -73,6 +73,7 @@ our @html_style = (
 '<FONT face=HGP創英角ﾎﾟｯﾌﾟ体 size=6 color=#666666>%s</FONT>',
 '<FONT face=HGP創英角ﾎﾟｯﾌﾟ体>%s</FONT>',
 '<FONT face=HGS創英角ﾎﾟｯﾌﾟ体 size=5>%s</FONT>',
+'<FONT face=HGS創英角ﾎﾟｯﾌﾟ体 color="#e2007f" size="4">%s</FONT>',
 '<FONT face=HGS創英角ﾎﾟｯﾌﾟ体>%s</FONT>',
 '<FONT size=2>%s</FONT>',
 '<FONT size=3>%s</FONT>',
